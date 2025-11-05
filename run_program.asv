@@ -1,0 +1,21 @@
+t_1 = 1;
+t_2 = 100;
+
+max_depth = 10;
+
+as = linspace(0,1,100);
+
+[xs,ys] = get_manhattan_curve_points(as, t_1, t_2, max_depth, true);
+
+save("xs","x_values.mat","-v7.3");
+save("ys","y_values.mat", "-v7.3");
+
+the_plot = plot(xs,ys);
+
+[~, ~, ~] = mkdir("figures");
+
+f = figure(Name=append("Manhattan Curve for T_1 = ",num2str(t_1)," and T_2 = ", num2str(t_2)));
+
+
+%exportgraphics(the_plot,"manhattan_curve.png");
+%exportgraphics(the_plot,"manhattan_curve.svg");

@@ -1,5 +1,7 @@
 # Visualizing-The-Manhattan-Curve
 
+All of these calculations were done using MATLAB Version R2024a
+
 ## How to Run
 
 The parameters `num_points`,`t_1`, `t_2`, `max_depth`, and `show_status_updates` can be configured in the `run_program.m` file.
